@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: cornsilk;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  
+}
+a{
+  text-align: none;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="/booked">Appointments</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div><marquee direction="middle" >
+    <p style="color:red;font-size: 200%;"> Please Select Person For Booking Appointment</p>
+</marquee>
+    
+</div>
+<div class="row">
+    <div class="column" align="center">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/5c7d7829a7ea434b351ba0b6/0x0.jpg?format=jpg&crop=1837,1839,x206,y250,safe&height=416&width=416&fit=bounds" alt="Snow" style="width:50%;  border-radius: 50%;"><br>
+      <a href="/profile?name=Mukesh_Ambani">Mukesh_Ambani</a>
+    </div>
+    <div class="column" align="center">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/6247592b253b5292622b15f6/0x0.jpg?format=jpg&crop=1969,1971,x403,y70,safe&height=416&width=416&fit=bounds" alt="Forest" style="width:50%;  border-radius: 50%;"><br>
+      <a href="/profile?name=Adani">Adani</a>
+    </div>
+    <div class="column" align="center">
+      
+      <img src="https://imageio.forbes.com/blogs-images/calebmelby/files/2012/03/218x300.jpg?format=jpg&width=218" alt="Mountains" style="width:40%;height: 80%;  border-radius: 50%;"><br>
+      <a href="/profile?name=Elon_Musk">Elon_Musk</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" align="center">
+      
+        
+    <img src="https://imageio.forbes.com/specials-images/imageserve/5bb22ae84bbe6f67d2e82e05/0x0.jpg?format=jpg&crop=1012,1013,x627,y129,safe&height=416&width=416&fit=bounds" alt="Forest" style="width: 40%;height: 90%;  border-radius: 50%;"><br>
+    <a href="/profile?name=JeffBezos">JeffBezos</a>
+    
+    </div>
+
+    <div class="column" align="center">
+      
+        <img src="https://img.etimg.com/thumb/msid-78886602,width-640,height-480,imgsize-642092,resizemode-4/sundar-pichai.jpg" alt="Forest" style="width: 40%;height: 90%;  border-radius: 60%;"><br>
+        <a href="/profile?name=JeffBezos">
+        <a href="/profile?name=Sundar_Pichhai">Sundar_Pichhai</a>
+    </div>
+</div>
+
+
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
